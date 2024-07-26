@@ -54,7 +54,7 @@ const loginUser = asyncHandler(async (req, res) => {
         },
       },
       process.env.ACCESS_TOKEN_SERCET,
-      { expiresIn: "1m" }
+      { expiresIn: "30m" }
     );
     res.status(200).json({ accessToken });
   }
